@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTasks } from "../redux/TaskInAdmin";
 import { Link } from "react-router-dom";
-import "./ongoingTask.css"
+import "./ongoingtask.css"
 
 const OngoingTaskPage = () => {  
   const dispatch = useDispatch();
