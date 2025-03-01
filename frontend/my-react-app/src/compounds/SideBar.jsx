@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./Sidebar.css"; 
+import "./sidebar.css"; 
 import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
