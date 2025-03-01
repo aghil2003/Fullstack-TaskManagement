@@ -1,0 +1,36 @@
+
+  /* Container */
+  .logcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  
+  /* Login Box */
+  .loginbox {
+    width: 300px;
+  }
+  
+  /* Image Box */
+  .imgbox img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover; /* Prevents image distortion */
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .imgbox img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

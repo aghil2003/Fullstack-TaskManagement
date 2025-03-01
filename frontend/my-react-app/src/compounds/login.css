@@ -1,0 +1,76 @@
+/* Centering the login container */
+.login-container {
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  /* Styling the heading */
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form styling */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #email{
+    box-shadow: none;
+    border-color: none;
+  }
+  #password{
+    box-shadow: none;
+    border-color: none;
+  }
+  
+  /* Button styling */
+  .btn-login {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-login:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Register link */
+  .register-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 400px) {
+    .login-container {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

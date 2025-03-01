@@ -1,0 +1,21 @@
+.container{
+    width: 500px;
+    height: 700px;
+    
+}
+.top-box{
+    display: flex;
+    justify-content: space-between;
+    /* margin:10px 30px 0px 30px; */
+    
+}
+/* .test{
+    width: 500px;
+    height: 700px;
+    background: red;
+} */
+ .Task{
+   margin-top: 10px;
+  
+ }
+ 

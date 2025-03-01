@@ -1,0 +1,22 @@
+.empcontainer{
+    width: 100%;
+    padding: 0px 20px;
+}
+.empbox{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+.empbtn{
+    margin: 10px;
+    border-radius: 5px;
+    margin-left: 1140px;
+}
+.empbtn1{
+    color: black;
+    text-decoration: none;
+    padding: 3px
+}

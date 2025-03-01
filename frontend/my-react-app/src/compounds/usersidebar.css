@@ -1,0 +1,63 @@
+.SideDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 500px;
+    background-color:  #4c3575;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+   }
+   
+   .menu-item {
+     padding: 10px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     transition: background-color 0.3s;
+     margin-top: 20px;
+   }
+   
+   .menu-item:hover {
+     background-color: #3b2760;
+     border-radius: 5px;
+   }
+   
+   /* Dropdown menu */
+   .dropdown-menu-custom {
+     background-color: #3b2760;
+     border: none;
+     padding: 0;
+     list-style: none;
+     margin: 0;
+     /* margin-left: 10px; */
+   }
+   
+   .dropdown-menu-custom .dropdown-item {
+     display: block;
+     color: #ffffff;
+     padding: 8px 12px;
+     text-decoration: none;
+     align-items: start;
+   }
+   
+   .dropdown-menu-custom .dropdown-item:hover {
+     background-color: #4c3575;
+   }
+   #backbtn {
+     background-color: transparent; /* Fixes the invalid 'none' value */
+     border: none; /* Optional: Removes default button border */
+     font-size: 16px; /* Adjust text size */
+     cursor: pointer; /* Makes it look clickable */
+     display: flex;
+     align-items: center;
+     gap: 5px; /* Adds spacing between icon and text */
+     color: #ffffff;
+     /* margin-left: 70px; */
+     /* margin-top: 140px; */
+   }
+ 

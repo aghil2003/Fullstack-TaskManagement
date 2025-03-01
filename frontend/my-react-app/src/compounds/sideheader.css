@@ -1,0 +1,25 @@
+#btndivadmin{
+    display: flex;
+}
+/* #adminaddbtn{
+    height: 100px;
+    background-color: aquamarine;
+} */
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
+}
+#adminaddbtn {
+    border-color: #3b2760;
+    color: #3b2760;
+    background-color: transparent;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+#adminaddbtn:hover {
+    color: #ffffff;
+    background-color: #3b2760;
+}

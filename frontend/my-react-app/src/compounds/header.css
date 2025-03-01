@@ -1,0 +1,45 @@
+.navbar{
+    height: 75px;
+    width: 100%;
+    background-color: #3d4074;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    /* color: #ffffff; */
+}
+.navlist{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 5px;
+    color: #ffffff;
+}
+.logo{
+  margin-left: 50px;
+  
+}
+.brandName{
+    height: 50px;
+    margin-top: 5px;
+}
+.navbtn{
+    margin-top: 15px;
+    margin-right: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+.showRole{
+    color: #ffffff;
+    font-size: 15px;
+}
+.navListBtn{
+    border-radius: 50px;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 3px 10px;
+}

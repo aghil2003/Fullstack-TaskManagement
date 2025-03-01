@@ -1,0 +1,13 @@
+.usercontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 10px;
+    gap:20px
+}
+
+.sidemain{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 5px;
+}

@@ -1,0 +1,67 @@
+.alltaskContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /* justify-content: space-between; */
+}
+.alltaskinnerbox{
+  display: flex;
+}
+.taskassingbtn{
+    color:#3d4074;
+    border-color: #3d4074;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius:5px;
+   margin-left: 800px;
+}
+.taskassingbtn:hover{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-color:#3d4074 ;
+  color:#ffffff;
+  background-color: #3d4074;
+}
+.task1box{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+    width:33% ;
+  }
+  .task2box{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+     width:34% ;
+   }
+   .task3box{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+     width:33% ;
+   }
+   .head{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+   }
+   .heading{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 200px;
+   }
+   .emp-task{
+    width: 100%;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: baseline;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding:  0px 10px;
+    border-radius: 15px;
+   }
+   .top-box{
+    display: flex;
+    justify-content: space-between;
+    /* margin:10px 30px 0px 30px; */
+    
+}
