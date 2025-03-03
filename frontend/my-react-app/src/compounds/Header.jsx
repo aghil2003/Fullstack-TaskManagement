@@ -6,12 +6,12 @@ import { UserContext } from "../context/UserContext";
 const Header = () => {
   const { user } = useContext(UserContext);
   const { logout } = useContext(UserContext);
-  const removeToken = () => {
-    localStorage.removeItem("token"); 
-    console.log("Token is removed");
-    logout(); 
-    window.location.href = "/";
-  };
+  // const removeToken = () => {
+  //   localStorage.removeItem("token"); 
+  //   console.log("Token is removed");
+  //   logout(); 
+  //   window.location.href = "/";
+  // };
 
   return (
     <nav className='navbar'>
@@ -30,7 +30,7 @@ const Header = () => {
         <div className='showRole'>
       Welcome, {user?.role || "Guest"}!
     </div>
-          <button className='navListBtn' onClick={removeToken}>Logout</button>
+          <button className='navListBtn' onClick={logout}>Logout</button>
         </div>
       </div>
     </nav>

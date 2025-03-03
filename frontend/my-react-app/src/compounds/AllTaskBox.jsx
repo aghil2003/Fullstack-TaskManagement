@@ -4,22 +4,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchTasks } from "../redux/TaskInAdmin";
 import Modal2 from "./Modal2";
 import Swal from "sweetalert2";
-import TaskBox from "./TaskBox";  // ✅ Import TaskBox
+import TaskBox from "./TaskBox"; 
 import  TaskMembersBox  from './TaskMembersBox';
 
 const Test = () => {
   const dispatch = useDispatch();
   const { completed, ongoing, pending, loading, error } = useSelector((state) => state.tasks);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [taskUpdated, setTaskUpdated] = useState(false);  // ✅ Track updates
+  const [taskUpdated, setTaskUpdated] = useState(false);  
 
   useEffect(() => {
     dispatch(fetchTasks());
-  }, [dispatch, taskUpdated]);  // ✅ Re-fetch on task update
-
+  }, [dispatch, taskUpdated]);  
   // Function to trigger updates after a new task is added
   const handleTaskAdded = () => {
-    setTaskUpdated((prev) => !prev);  // ✅ Toggle state to trigger re-fetch
+    setTaskUpdated((prev) => !prev); 
   };
 
  
@@ -49,14 +48,24 @@ const Test = () => {
       <button className="taskassingbtn" onClick={() => setIsModalOpen(true)}>
         Add Task
       </button>
+      {isModalOpen && (
+      <Modal2 
+       onClose={() => setIsModalOpen(false)} 
+       onTaskAdded={() => {
+       handleTaskAdded();
+       dispatch(fetchTasks());
+       }}  
+       />
+       )}
 
+{/* 
       {isModalOpen && (
         <Modal2 
           onClose={() => setIsModalOpen(false)} 
-          onTaskAdded={handleTaskAdded}  // ✅ Trigger update on new task
+          onTaskAdded={handleTaskAdded}  
         />
       )}
-        {isModalOpen && <Modal2 onClose={() => setIsModalOpen(false)} onTaskAdded={() => dispatch(fetchTasks())} />}
+        {isModalOpen && <Modal2 onClose={() => setIsModalOpen(false)} onTaskAdded={() => dispatch(fetchTasks())} />} */}
        </div>
 
       <div className="alltaskinnerbox">

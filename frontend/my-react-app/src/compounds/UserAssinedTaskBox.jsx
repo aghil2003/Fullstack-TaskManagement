@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import useAuth from "../hooks/useAuth";
 import Swal from "sweetalert2";
 import instance from "../Axios/instance";
-import "./userasinedtaskbox.css";
+import "./userassinedtaskbox.css";
 
 const UserAssignedTaskBox = () => {
   const { user, isLoading } = useAuth();
